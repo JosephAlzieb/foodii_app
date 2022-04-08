@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_ordering_app/components/app_bar.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -15,6 +16,11 @@ class HomePage extends StatelessWidget {
             image: AssetImage("assets/images/img.png"),
             fit: BoxFit.fill
           )
+        ),
+        child: Column(
+          children: [
+            CustomAppBar(),
+          ],
         ),
       ),
     );
